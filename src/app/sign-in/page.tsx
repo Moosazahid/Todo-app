@@ -18,6 +18,7 @@ const SignIn = () => {
     }
     else{
       localStorage.setItem("token",resp?.token)
+      localStorage.setItem("userId",resp?.id)
       router.push('/todo')
     }
   };
@@ -38,7 +39,7 @@ const SignIn = () => {
                   <div className="md:p-12 md:mx-6">
                     <div className="text-center">
                       <h4 className="text-xl font-semibold mt-1 mb-12 pb-1">
-                        Sign Up
+                        Sign In
                       </h4>
                     </div>
                     <form>
