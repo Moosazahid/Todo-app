@@ -10,3 +10,4 @@ export async function authenticate(formData:{ username:string; password:string})
       })
       return response.json()
 }
+
